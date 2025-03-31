@@ -5,6 +5,13 @@
   align-items: center;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #002f4b, #000);
+  height: 100vh;
+  position: relative;
+
 }
 
 
@@ -89,9 +96,38 @@
 
 .faq-image {
   max-width: 100%;
-  margin-left:10px;
+  margin:15px;
   height: 50vh;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   
+}
+
+
+.bubble:nth-child(1) { width: 20px; height: 20px; left: 5%; animation-duration: 6s; }
+        .bubble:nth-child(2) { width: 30px; height: 30px; left: 20%; animation-duration: 8s; }
+        .bubble:nth-child(3) { width: 25px; height: 25px; left: 40%; animation-duration: 10s; }
+        .bubble:nth-child(4) { width: 40px; height: 40px; left: 60%; animation-duration: 7s; }
+        .bubble:nth-child(5) { width: 35px; height: 35px; left: 80%; animation-duration: 9s; }
+        .bubble:nth-child(6) { width: 15px; height: 15px; left: 90%; animation-duration: 6s; }
+
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: rgb(247, 245, 244);
+  border-radius: 50%;
+  animation: rise linear infinite;
+}
+
+@keyframes rise {
+  0% {
+      transform: translateY(0);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translateY(-110vh);
+      opacity: 0;
+  }
 }

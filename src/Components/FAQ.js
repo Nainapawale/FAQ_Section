@@ -10,6 +10,11 @@ const faqData=[
       "Dinex is a web-based restaurant management system that streamlines ordering, payments, and table reservations.",
   },
   {
+    question: "Is there some offers on items ?",
+    answer:
+      "Yes! We provide offers and discounts on special days or weekends.",
+  },
+  {
     question: "How can I place an order?",
     answer:
       "You can browse our menu, add items to your cart, and proceed to checkout for seamless ordering.",
@@ -31,6 +36,13 @@ const FAQ = () => {
 
   return (
     <div className="container faq-container">
+
+<div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
       <div className="row">
 
         <div className="col-md-6 faq-section">
